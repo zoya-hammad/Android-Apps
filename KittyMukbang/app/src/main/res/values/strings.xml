@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Kitty Mukbang</string>
+    <string name="kitty_mukbang">Kitty Mukbang</string>
+    <string name="main_courses">Main Courses</string>
+    <string name="starters">Starters</string>
+    <string name="kittymukbang_email">kittymukbang@mukbang.com</string>
+    <string name="desserts">Desserts</string>
+</resources>
