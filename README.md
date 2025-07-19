@@ -5,7 +5,7 @@ Kotlin and Java mini applications for practice
 
 ### Java 
 
-- [BMI Calculator (Key Concepts: Toast, Button OnClickListener, Input Parsing, Conditional Logic, Formatting, RadioGroup ](BMICalculator/)
+- [BMI Calculator](BMICalculator/) (Key Concepts: Toast, Button OnClickListener, Input Parsing, Conditional Logic, Formatting, RadioGroup)
   
 
 ### Kotlin 
