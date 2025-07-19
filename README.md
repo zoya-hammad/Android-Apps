@@ -3,12 +3,16 @@ Kotlin and Java mini applications for practice
 
 ## List of Apps
 
-### Java 
+### Java Projects
 
-- [BMI Calculator](BMICalculator/) (Key Concepts: Toast, Button OnClickListener, Input Parsing, Conditional Logic, Formatting, RadioGroup)
-- [Mukbang Menu App](KittyMukbang/) (Key Concepts: Classes, ListViews, Explicit and Implicit Intents, MaterialCardView, Override Functions)
-  
+| Project Name | Key Concepts |
+|--------------|--------------|
+| [BMI Calculator](BMICalculator/) | Toast, Button OnClickListener, Input Parsing, Conditional Logic, Formatting, RadioGroup |
+| [Mukbang Menu App](KittyMukbang/) | Classes, ListViews, Explicit and Implicit Intents, MaterialCardView, Override Functions |
 
-### Kotlin 
-- [What Disney Villain Are You - Quiz ](WhatDisneyVillainAreYouQuiz/) (Key Concepts: Toast, Button OnClickListener, Adapters, RadioGroup, Spinner, Checkbox, Toolbar, Arrays, Custom Logic)
-- [WebView ](WebView/) (Key Concepts: WebView Widget, Dependencies)
+### Kotlin Projects
+
+| Project Name | Key Concepts |
+|--------------|--------------|
+| [What Disney Villain Are You - Quiz](WhatDisneyVillainAreYouQuiz/) | Toast, Button OnClickListener, Adapters, RadioGroup, Spinner, Checkbox, Toolbar, Arrays, Custom Logic |
+| [WebView](WebView/) | WebView Widget, Dependencies |
