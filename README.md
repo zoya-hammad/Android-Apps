@@ -17,4 +17,4 @@ Kotlin and Java mini applications for practice
 | [What Disney Villain Are You - Quiz](WhatDisneyVillainAreYouQuiz/) | Toast, Button OnClickListener, Adapters, RadioGroup, Spinner, Checkbox, Toolbar, Arrays, Custom Logic |
 | [WebView](WebView/) | WebView Widget, Dependencies |
 | [Phone Dialpad](my_dialpad/) | TableView, Row Layout, Implicit Intents, String Manipulation, Arrays & Loops |
-
+| [GridView](GridView/) | GridView, Custom Adapter for stickers |
