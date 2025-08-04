@@ -13,10 +13,18 @@
         android:theme="@style/Theme.BucketList"
         tools:targetApi="31">
         <activity
+            android:name=".PlacesActivity"
+            android:exported="false"
+            android:label="Places To Go"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ThingsActivity"
+            android:exported="false"
+            android:label="Things To Do"
+            android:parentActivityName=".MainActivity" />
+        <activity
             android:name=".MainActivity"
-            android:exported="false">
-        </activity>
-
+            android:exported="false" />
         <activity
             android:name=".SplashActivity"
             android:exported="true"
@@ -26,7 +34,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>
