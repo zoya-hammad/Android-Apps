@@ -11,8 +11,9 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.commit
 import com.example.recordkeeper.databinding.ActivityMainBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.navigation.NavigationBarView.OnItemSelectedListener
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), OnItemSelectedListener {
 
     private lateinit var binding: ActivityMainBinding
 
@@ -31,17 +32,13 @@ class MainActivity : AppCompatActivity() {
         // Set up BottomNavigationView with proper listener
         binding.bottomNav.setOnItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
-                R.id.nav_running -> {
-                    onRunningClicked()
-                    true
-                }
-                R.id.nav_cycling -> {
-                    onCyclingClicked()
-                    true
-                }
+                R.id.nav_running -> onRunningClicked()
+                R.id.nav_cycling -> onCyclingClicked()
                 else -> false
             }
         }
+
+//        binding.bottomNav.setOnItemSelectedListener(this)
 
 //        binding.btnCycling.setOnClickListener(object : View.OnClickListener{
 //
@@ -67,16 +64,18 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    private fun onRunningClicked() {
+    private fun onRunningClicked(): Boolean {
         supportFragmentManager.commit {
             replace(R.id.frame_content, RunningFragment())
         }
+        return true
     }
 
-    private fun onCyclingClicked() {
+    private fun onCyclingClicked(): Boolean {
         supportFragmentManager.commit {
             replace(R.id.frame_content, CyclingFragment())
         }
+        return true
     }
 
 //    override fun onClick(v: View?) {

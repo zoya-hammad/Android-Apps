@@ -2,6 +2,16 @@
     <string name="app_name">RecordKeeper</string>
     <string name="cycling">Cycling</string>
     <string name="running">Running</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="running_fragment">Running</string>
+    <string name="running_image_description">Running Image</string>
+    <string name="_5km">5km</string>
+    <string name="_10km">10km</string>
+    <string name="half_marathon">Half Marathon\n</string>
+    <string name="marathon">Marathon\n</string>
+    <string name="cycling_fragment">Cycling\n</string>
+    <string name="cycling_image_description">Cycling Image\n</string>
+    <string name="longest_ride">Longest Ride</string>
+    <string name="biggest_climb">Biggest Climb</string>
+    <string name="best_avg_speed">Best Average Speed</string>
 </resources>
