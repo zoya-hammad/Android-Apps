@@ -1,6 +1,9 @@
 package com.example.recordkeeper
 
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
 import android.view.View
 import android.widget.FrameLayout
 import android.widget.Toast
@@ -13,7 +16,7 @@ import com.example.recordkeeper.databinding.ActivityMainBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationBarView.OnItemSelectedListener
 
-class MainActivity : AppCompatActivity(), OnItemSelectedListener {
+class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
@@ -37,6 +40,8 @@ class MainActivity : AppCompatActivity(), OnItemSelectedListener {
                 else -> false
             }
         }
+
+
 
 //        binding.bottomNav.setOnItemSelectedListener(this)
 
@@ -63,6 +68,29 @@ class MainActivity : AppCompatActivity(), OnItemSelectedListener {
         }
     }
 
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.toolbar, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        // Handle item selection.
+        return when (item.itemId) {
+            R.id.reset_running -> {
+                Toast.makeText(this,"Reset Running menu item",Toast.LENGTH_SHORT).show()
+                true
+            }
+            R.id.reset_cycling -> {
+                Toast.makeText(this,"Reset Cycling menu item",Toast.LENGTH_SHORT).show()
+                true
+            }
+            R.id.reset_all -> {
+                Toast.makeText(this,"Reset All menu item",Toast.LENGTH_SHORT).show()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
+    }
 
     private fun onRunningClicked(): Boolean {
         supportFragmentManager.commit {
